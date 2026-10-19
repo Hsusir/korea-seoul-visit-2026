@@ -173,10 +173,11 @@ h2 { font-size: clamp(32px, 3.2vw, 48px); line-height: 1.2; letter-spacing: -.05
   .itinerary-head { align-items: start; }
   .itinerary-count { font-size: 52px; }
   .itinerary-count span { display: none; }
-  .day-tabs { grid-template-columns: 155px 190px 155px repeat(4, minmax(115px, 1fr)); overflow-x: auto; }
-  .day-tab { padding: 15px 13px; min-height: 106px; }
+  .day-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; }
+  .day-tab { min-width: 0; min-height: 102px; padding: 14px 13px; }
   .day-tab strong { font-size: 26px; }
-  .prep-tab strong, .tutorial-tab strong, .hotel-tab strong { font-size: 17px; }
+  .prep-tab strong, .tutorial-tab strong, .hotel-tab strong { font-size: 16px; }
+  .day-tab small { font-size: 11px; }
   .day-panel { padding: 28px 22px 24px; }
   .day-intro { padding-bottom: 25px; }
   .day-intro h3 { font-size: 24px; }
@@ -210,6 +211,10 @@ h2 { font-size: clamp(32px, 3.2vw, 48px); line-height: 1.2; letter-spacing: -.05
   .brand-label { display: none; }
   .hero-meta small { display: none; }
   .day-date { display: none; }
+  .day-tab { min-height: 96px; padding: 12px 11px; }
+  .day-tab strong { font-size: 23px; }
+  .prep-tab strong, .tutorial-tab strong, .hotel-tab strong { font-size: 15px; }
+  .day-tab span { font-size: 9px; letter-spacing: .11em; }
 }
 
 @media (prefers-reduced-motion: reduce) {
