@@ -43,7 +43,7 @@
     <section class="itinerary section-pad" id="itinerary" aria-labelledby="itinerary-title">
       <div class="shell">
         <div class="itinerary-head">
-          <div><p class="section-kicker">01 / ITINERARY</p><h2 id="itinerary-title">行前資訊與四日行程</h2><p class="section-intro">先查看注意事項、入境申請教學與飯店簡介，再點選日期瀏覽當日安排。</p></div>
+          <div><p class="section-kicker">01 / ITINERARY</p><h2 id="itinerary-title">行前資訊與四日行程</h2><p class="section-intro">先查看注意事項、入境申請教學、飯店與交通資訊，再點選日期瀏覽當日安排。</p></div>
           <div class="itinerary-count">04 <span>DAYS<br>IN SEOUL</span></div>
         </div>
 
@@ -51,6 +51,7 @@
           <button class="day-tab prep-tab is-active" type="button" role="tab" id="tab-prep" aria-controls="panel-prep" aria-selected="true" tabindex="0" data-day="prep"><span>BEFORE TRIP</span><strong>注意事項</strong><small>出發前</small></button>
           <button class="day-tab tutorial-tab" type="button" role="tab" id="tab-arrival" aria-controls="panel-arrival" aria-selected="false" tabindex="-1" data-day="arrival"><span>E-ARRIVAL CARD</span><strong>韓國入境申請教學</strong><small>出發前 72 小時</small></button>
           <button class="day-tab hotel-tab" type="button" role="tab" id="tab-hotel" aria-controls="panel-hotel" aria-selected="false" tabindex="-1" data-day="hotel"><span>STAY IN SEOUL</span><strong>飯店簡介</strong><small>Delight Hotel Jamsil</small></button>
+          <button class="day-tab uber-tab" type="button" role="tab" id="tab-uber" aria-controls="panel-uber" aria-selected="false" tabindex="-1" data-day="uber"><span>GETTING AROUND</span><strong>首爾 Uber 叫車</strong><small>搭乘與行李提醒</small></button>
           <button class="day-tab" type="button" role="tab" id="tab-day1" aria-controls="panel-day1" aria-selected="false" tabindex="-1" data-day="day1"><span>DAY 01</span><strong>10.27</strong><small>週二 · 出發</small></button>
           <button class="day-tab" type="button" role="tab" id="tab-day2" aria-controls="panel-day2" aria-selected="false" tabindex="-1" data-day="day2"><span>DAY 02</span><strong>10.28</strong><small>週三 · 學術交流</small></button>
           <button class="day-tab" type="button" role="tab" id="tab-day3" aria-controls="panel-day3" aria-selected="false" tabindex="-1" data-day="day3"><span>DAY 03</span><strong>10.29</strong><small>週四 · 產業應用</small></button>
@@ -114,6 +115,24 @@
             <section><h4>交通與周邊</h4><ul><li>距地鐵 8 號線夢村土城站約 310–400 公尺。</li><li>距松潘aru站約 620 公尺。</li><li>步行約 8–10 分鐘可達蠶室站；約 800 公尺可達樂天世界塔與樂天世界購物中心。</li><li>鄰近芳荑洞美食街、石村湖與奧林匹克公園。</li></ul></section>
             <section><h4>主要設施與服務</h4><ul><li>客房提供免費 Wi-Fi、平面電視、影音串流、冰箱與空調；部分房型設有按摩浴缸或地熱設備。</li><li>館內設有 CAFE BOLZAN、酒吧／酒廊，以及 10 樓自助洗衣與烘衣設備。</li><li>提供 24 小時櫃台、商務中心、免費代客停車與免費自行車租借。</li></ul></section>
           </div>
+        </div>
+
+        <div class="day-panel uber-panel" id="panel-uber" role="tabpanel" aria-labelledby="tab-uber" tabindex="0" hidden>
+          <div class="day-intro"><div><span class="day-index">GETTING AROUND SEOUL</span><h3>首爾 Uber 叫車事項</h3><p>可直接使用台灣慣用的 Uber App，無須重新註冊或另行下載韓國門號。</p></div></div>
+          <section class="uber-overview" aria-labelledby="uber-overview-title">
+            <div><p class="section-kicker">UBER IN SEOUL</p><h4 id="uber-overview-title">使用前先確認</h4></div>
+            <p>App 介面會自動切換為繁體中文，並與韓國當地的 UT／Uber 合作系統連結。請於出發前完成付款設定，抵達後即可直接叫車。</p>
+          </section>
+          <div class="uber-grid">
+            <article class="uber-card"><span>01</span><h4>出發前設定</h4><p>請先在台灣完成 App 內信用卡或金融卡的綁定與 4 位數 PIN 碼設定，避免到韓國因收不到簡訊驗證碼而無法綁卡。</p></article>
+            <article class="uber-card"><span>02</span><h4>使用方式</h4><p>開啟 App 輸入目的地，支援中文或英文；選擇車型、確認預估車資後即可呼叫。車資會透過綁定的信用卡自動扣款，下車不用付現金。</p></article>
+            <article class="uber-card"><span>03</span><h4>主要車型</h4><p>提供 Uber Taxi（一般計程車）、快速叫車、Uber Green 以及豪華或大型車等選項。</p></article>
+            <article class="uber-card"><span>04</span><h4>行李與人數限制</h4><p>一般計程車多為 4 人座，含司機共 5 人；部分車輛為瓦斯車，後方置物空間有限。若同行超過 4 人或行李較多，建議分開叫車或預約大型車。</p></article>
+          </div>
+          <section class="uber-sources" aria-labelledby="uber-sources-title">
+            <h4 id="uber-sources-title">參考連結</h4>
+            <div><a href="https://tw.trip.com/guide/transport/%E9%9F%93%E5%9C%8B%E8%A8%88%E7%A8%8B%E8%BB%8A.html" target="_blank" rel="noopener noreferrer">Trip.com：韓國計程車與 Uber ↗</a><a href="https://traveltokoreanow.com/uber/" target="_blank" rel="noopener noreferrer">Travel to Korea Now：Uber ↗</a><a href="https://www.mobile01.com/topicdetail.php?f=405&amp;t=7101466" target="_blank" rel="noopener noreferrer">Mobile01：韓國 Uber 設定討論 ↗</a><a href="https://www.dcard.tw/f/korea_travel/p/258404505" target="_blank" rel="noopener noreferrer">Dcard：韓國旅遊 Uber 討論 ↗</a><a href="https://www.funliday.com/posts/2022-korea-uber-tutorial/" target="_blank" rel="noopener noreferrer">Funliday：韓國 Uber 使用教學 ↗</a><a href="https://www.uber.com/kr/zh/r/cities/taxi/seoul-seoul-kr/" target="_blank" rel="noopener noreferrer">Uber：首爾計程車服務 ↗</a></div>
+          </section>
         </div>
 
         <div class="day-panel" id="panel-day1" role="tabpanel" aria-labelledby="tab-day1" tabindex="0" hidden>

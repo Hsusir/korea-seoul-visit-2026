@@ -1,6 +1,6 @@
 /**
  * Purpose: Switch among pre-trip information and daily itinerary panels.
- * Input: Tab clicks, arrow/Home/End keys, or a #prep/#arrival/#hotel/#day1–#day4 URL hash.
+ * Input: Tab clicks, arrow/Home/End keys, or a #prep/#arrival/#hotel/#uber/#day1–#day4 URL hash.
  * Output: The selected day panel, accessible tab state, and shareable URL hash.
  * Dependencies: None. Example: index.html#prep opens preparation notes.
  */
