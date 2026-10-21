@@ -156,6 +156,24 @@ h2 { font-size: clamp(32px, 3.2vw, 48px); line-height: 1.2; letter-spacing: -.05
 .uber-sources a { display: inline-flex; padding: 8px 10px; background: #edf1f6; color: #344865; font-size: 12px; font-weight: 700; text-decoration: none; }
 .uber-sources a:hover, .uber-sources a:focus-visible { background: var(--navy); color: #fff; }
 
+.visit-details { margin-top: 20px; padding: 20px; border-left: 3px solid var(--accent); background: #f8fafc; }
+.visit-name { display: grid; gap: 3px; margin: 0; color: var(--navy); font-size: 14px; line-height: 1.6; }
+.visit-name strong { font-size: 15px; }
+.visit-name span { color: var(--muted); }
+.visit-details dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 17px 0 0; }
+.visit-details dl > div { min-width: 0; }
+.visit-details dt { margin-bottom: 4px; color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .07em; }
+.visit-details dd { margin: 0; color: var(--ink); font-size: 13px; line-height: 1.7; overflow-wrap: anywhere; }
+.visit-details a { color: #264f91; font-weight: 700; }
+.map-link { display: inline-flex; margin-top: 18px; padding: 8px 10px; background: #e7eef9; color: #264f91; font-size: 12px; font-weight: 800; text-decoration: none; }
+.map-link:hover, .map-link:focus-visible { background: var(--navy); color: #fff; }
+.visit-links { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
+.visit-links .map-link { margin-top: 0; }
+.visit-highlights { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 14px; margin: 18px 0 0; padding: 0; list-style: none; }
+.visit-highlights li { position: relative; padding-left: 13px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.visit-highlights li::before { content: ""; position: absolute; top: .65em; left: 0; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+.stay-note { margin: 23px 0 0; padding: 12px 15px; border-left: 3px solid var(--accent); background: #fff8df; color: #544218; font-size: 14px; font-weight: 800; }
+
 .site-footer { background: var(--navy); color: #fff; padding: 52px 0; }
 .footer-inner { display: flex; justify-content: space-between; gap: 50px; }
 .footer-brand { display: block; font: 800 17px/1.15 Arial, sans-serif; letter-spacing: .1em; margin-bottom: 24px; }
@@ -221,6 +239,9 @@ h2 { font-size: clamp(32px, 3.2vw, 48px); line-height: 1.2; letter-spacing: -.05
   .uber-overview h4, .uber-card h4 { font-size: 22px; }
   .uber-grid { grid-template-columns: 1fr; gap: 18px; margin-top: 18px; }
   .uber-card { padding: 22px; }
+  .visit-details { padding: 17px; }
+  .visit-details dl { grid-template-columns: 1fr; gap: 13px; }
+  .visit-highlights { grid-template-columns: 1fr; }
   .footer-inner { display: block; }
   .footer-right { text-align: left; margin-top: 30px; }
 }
